@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { IcoListService } from './services';
 import { AppComponent } from './app.component';
 import {
   FooterComponent,
@@ -17,10 +18,8 @@ import {
     MainComponent,
     ListItemComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
+  imports: [BrowserModule],
+  providers: [IcoListService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
